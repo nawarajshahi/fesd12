@@ -13,12 +13,12 @@
             <div class="col col-sm-3">
               <input type="text" class="form-control" placeholder="serial number" aria-label="serial-number" id="inputSerialNo">
             </div>
-            <div class="col col-sm-3">
+            <!-- <div class="col col-sm-3">
               <input type="text" class="form-control" placeholder="model number" aria-label="model-no" id="inputModelNo">
             </div>
             <div class="col col-sm-4">
                 <input type="text" class="form-control" placeholder="location" aria-label="location" id="inputLocation">
-            </div>
+            </div> -->
         </div>
         <div class="d-grid gap-2 d-md-block">
             <button class="btn btn-primary" type="button" id="btn-create">Create</button>
@@ -28,25 +28,26 @@
     <div class="read container container-fluid mb-5">
         <h1>Read all the restrooms</h1>
         <div class="row">
-            <p>Restrooms info</p>
+            <p>Restrooms Information: </p>
         </div>
+        <div id="restrooms-info"></div>
         <div class="d-grid gap-2 d-md-block">
-            <button class="btn btn-secondary" type="button" id="but-read">Read</button>
+            <button class="btn btn-secondary" type="button" id="btn-read">Read</button>
         </div>
     </div>
    
     <div class="update container container-fluid mb-5">
-        <h1>Update Lapco Restroom by serial number</h1>
+        <h1>Update Lapco Restroom serial number</h1>
         <div class="row">
             <div class="col col-sm-3">
-              <input type="text" class="form-control" placeholder="serial number" aria-label="serial-number" id="updateSerialNo">
+              <input type="text" class="form-control" placeholder="new serial number" aria-label="serial-number" id="updateSerialNoValue">
             </div>
             <div class="col col-sm-3">
-              <input type="text" class="form-control" placeholder="model number" aria-label="model-no" id="updateModelNo">
+              <input type="text" class="form-control" placeholder="existing restroom id" aria-label="model-no" id="existingRestroomId">
             </div>
-            <div class="col col-sm-4">
+            <!-- <div class="col col-sm-4">
                 <input type="text" class="form-control" placeholder="location" aria-label="location" id="updateLocation">
-            </div>
+            </div> -->
         </div>
         <div class="d-grid gap-2 d-md-block">
             <button class="btn btn-outline-primary" type="button" id="btn-update">Update</button>
@@ -57,7 +58,7 @@
         <h1>Delete restroom by serial number</h1>
         <div class="row">
             <div class="col col-sm-3">
-              <input type="text" class="form-control" placeholder="serial number" aria-label="serial-number" id="deleteSerialNo">
+              <input type="text" class="form-control" placeholder="existing serial number" aria-label="serial-number" id="deleteSerialNo">
             </div>
         </div>
         <div class="d-grid gap-2 d-md-block">
@@ -66,5 +67,7 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
 </html>
