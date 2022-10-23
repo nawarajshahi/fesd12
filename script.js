@@ -65,6 +65,8 @@ getRestroomsBtn.addEventListener("click", () => getRestrooms().then((data) => {
       success: doStuffWithData,
       error: sayError
     });
+    //Clear the input once button is clicked
+    inputSerialNo.value = "";
   }
 
   createRestroomBtn.addEventListener("click", () => createRestroom(inputSerialNo.value))
@@ -86,9 +88,13 @@ getRestroomsBtn.addEventListener("click", () => getRestrooms().then((data) => {
       success: doStuffWithData,
       error: sayError
     });
+    //Clear the input once button is clicked
+    existingRestroomId.value = ""
+    updateSerialNoValue.value = ""
+
   }
 
-  updateSerialNoBtn.addEventListener("click", () => updateRestroom( existingRestroomId.value, updateSerialNoValue.value));
+  updateSerialNoBtn.addEventListener("click", () => updateRestroom(existingRestroomId.value, updateSerialNoValue.value));
 
 
 
@@ -103,6 +109,8 @@ getRestroomsBtn.addEventListener("click", () => getRestrooms().then((data) => {
       success: doStuffWithData,
       error: sayError
     });
+    //Clear the input once button is clicked
+    deleteRestroomId.value = "";
   }
 
   deleteRestroomBtn.addEventListener("click", () => deleteRestroom(deleteRestroomId.value))
